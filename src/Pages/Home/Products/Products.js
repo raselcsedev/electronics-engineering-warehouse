@@ -10,8 +10,8 @@ const Products = () => {
         .then(data=> setProducts(data))
     },[])
     return (
-        <div className='products-title'>
-            <h2>Products....... {products.length}</h2>
+        <div id='products' className='products-title'>
+            <h2 className= 'mx-auto'>Our Products</h2>
             <div className='products-container'>
             {
                 products.map(product => <Product
