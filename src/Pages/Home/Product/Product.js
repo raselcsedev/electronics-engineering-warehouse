@@ -8,7 +8,7 @@ const Product = ({product}) => {
         navigate(`/product/${id}`)
     }
     return (
-        <div className='product text-dark '>
+        <div className='product text-dark container '>
             <div>
             <img className='image-container w-100' src={img} alt="" />
             </div>

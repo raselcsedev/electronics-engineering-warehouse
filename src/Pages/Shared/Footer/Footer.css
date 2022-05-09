@@ -1,0 +1,43 @@
+.contact-us{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    color: whitesmoke
+}
+.copyright{
+    color: whitesmoke;
+}
+.copyright h6{
+    margin-top: 15px;
+}
+.copyright .google-img{
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    padding: 2px;
+    border-radius: 50%;
+    
+}
+.copyright .facebook-img{
+    
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: whitesmoke;
+    padding: 2px;
+    border-radius: 50%;
+}
+
+@media (max-width:650px) {
+    
+    
+    .contact-us{
+        gap: 25px;
+        font-size: small;
+    }
+    
+}

@@ -1,0 +1,15 @@
+.not-found-page {
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 500px;
+}
+.not-found-page h1{
+    margin-bottom: 0px;
+}
+.not-found-page p{
+    font-style: italic;
+    font-size: xx-large;
+    font-weight: lighter;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 0px;
+}

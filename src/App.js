@@ -12,6 +12,7 @@ import RequireRoute from './Pages/Login/RequireRoute/RequireRoute';
 import Inventory from './Pages/Inventory/Inventory/Inventory';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import Products from './Pages/Home/Products/Products';
+import Footer from './Pages/Shared/Footer/Footer';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-    
+    <Footer></Footer>
     </div>
   );
 }
