@@ -8,20 +8,16 @@ const Product = ({product}) => {
         navigate(`/product/${id}`)
     }
     return (
-        <div className='product text-dark container '>
-            <div>
-            <img className='image-container w-100' src={img} alt="" />
+        <div className='product text-dark container text-align-center'>
+            <div >
+            <img style={{height:'200px'}} className='image-container mb-2' src={img} alt="" />
             </div>
             <div className='align-content-around'>
             <div>
-            <h3 className='text-info'>{name}</h3>
-            <p >{description}</p>
-            <h6>Price:<small> {price}$</small></h6>
-            <h6>Supplier Name:<small> {supplier}</small></h6>
-            <h6>Quantity:<small> {quantity}</small></h6>
+            <h3 style={{height:'100px'}} className=' text-center'>{name}</h3>
             </div>
             <div className='mt-3 mb-0'>
-            <button className='btn btn-info w-50 text-align-center' onClick={()=> navigateToProductDetail(_id)} >Update</button>
+            <button className='btn btn-info w-100 mx-auto text-align-center' onClick={()=> navigateToProductDetail(_id)} >Update</button>
             </div>
             </div>
         </div>

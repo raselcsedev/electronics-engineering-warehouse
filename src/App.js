@@ -13,6 +13,7 @@ import Inventory from './Pages/Inventory/Inventory/Inventory';
 import AddProduct from './Pages/AddProduct/AddProduct';
 import Products from './Pages/Home/Products/Products';
 import Footer from './Pages/Shared/Footer/Footer';
+import ManageProduct from './Pages/ManageProduct/ManageProduct';
 
 
 function App() {
@@ -23,7 +24,11 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
-        <Route path='/product/:productId' element={<ProductDetail></ProductDetail>}></Route>
+        <Route path='/product/:productId' element={
+          <RequireRoute>
+            <ProductDetail></ProductDetail>
+          </RequireRoute>
+        }></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>} ></Route>
         <Route path='/register' element={<Register></Register>} ></Route>
@@ -35,6 +40,11 @@ function App() {
         <Route path='/addProduct' element={
           <RequireRoute>
             <AddProduct></AddProduct>
+          </RequireRoute>
+        }></Route>
+        <Route path='/manageProduct' element={
+          <RequireRoute>
+            <ManageProduct></ManageProduct>
           </RequireRoute>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>

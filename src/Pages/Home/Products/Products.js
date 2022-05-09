@@ -5,13 +5,13 @@ import './Products.css'
 const Products = () => {
     const [products, setProducts] = useState([]);
     useEffect( ()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://stark-atoll-21313.herokuapp.com/product')
         .then(res=>res.json())
         .then(data=> setProducts(data))
     },[])
     return (
         <div id='products' className='products-title'>
-            <h1 className= 'mx-auto text-info'>Our Products</h1>
+            <h1 className= 'mx-auto text-info mb-3'>Our Products</h1>
             <div className='products-container'>
             {
                 products.slice(0,6).map(product => <Product
