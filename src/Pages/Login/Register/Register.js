@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import Social from '../Social/Social';
 
@@ -12,8 +12,8 @@ const Register = () => {
         user,
         loading,
         error,
-      ] = useCreateUserWithEmailAndPassword(auth);
-
+      ] = useCreateUserWithEmailAndPassword(auth, {sendEmailVerification : true});
+      const [updateProfile, updateError] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
     const navigateLogin = e =>{
@@ -24,13 +24,17 @@ const Register = () => {
         navigate('/home');
     }
 
-    const handleRegister = e =>{
+    const handleRegister =async e =>{
         e.preventDefault();
         const name = e.target.name.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
+      await createUserWithEmailAndPassword(email, password);
+      await updateProfile({displayName: name});
+      alert('Updated Profile');
+      navigate('/home');
+
     }
     return (
         <div className='container w-50 mx-auto'>

@@ -16,6 +16,8 @@ const Social = () => {
 
     }
 
+ 
+
     if (user) {
         navigate('/home');
     }
