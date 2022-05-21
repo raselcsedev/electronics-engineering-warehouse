@@ -1,11 +1,13 @@
 import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link,useLocation, useNavigate } from 'react-router-dom';
-import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import Social from '../Social/Social';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Loading from '../../Shared/Loading/Loading';
+import google from '../../../images/social/google.png';
 
 const Login = () => {
     const emailRef = useRef('');
@@ -15,6 +17,7 @@ const Login = () => {
     let from = location.state?.from?.pathname || '/';
     let errorShow;
 
+    const [signInWithGoogle, gUser, gLoading, gError] = useSignInWithGoogle(auth);
     const [
         signInWithEmailAndPassword,
         user,
@@ -22,19 +25,23 @@ const Login = () => {
         error,
     ] = useSignInWithEmailAndPassword(auth);
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
-    if (user) {
+    if (user || gUser) {
         navigate(from, {replace:true});
     };
 
-    if (error) {
+    if (loading || gLoading) {
+        return <Loading></Loading>
+    }
+
+    if (error || gError) {
         errorShow = <div>
             <p className='text-danger'>Error: {error.message}</p>
         </div>
 
     };
 
-    const handleSubmit = e => {
-        e.preventDefault();
+    const handleSubmit = event => {
+        event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
 
@@ -42,7 +49,7 @@ const Login = () => {
 
     }
 
-    const navigateRegister = e => {
+    const navigateRegister = event => {
         navigate('/register');
     }
 
@@ -79,8 +86,14 @@ const Login = () => {
             <p>New User ? <Link to='/register' className='text-danger w-25 pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link></p>
 
             <p>Forgot Password? <button className='text-danger w-25 pe-auto text-decoration-none btn btn-link' onClick={passwordReset}>Reset Password</button></p>
+            
+            <button
+                onClick={() => signInWithGoogle()}
+                className='btn btn-info w-50 d-block my-2'>
+                <img style={{ width: '30px' }} src={google} alt="" />
+                <span className='px-2'>Google Sign In</span>
+            </button>
             <ToastContainer />
-            <Social></Social>
         </div>
     );
 };
