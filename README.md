@@ -8,12 +8,15 @@ Github Issue Create [Github Issue](https://github.com/ProgrammingHeroWC4/warehou
 
 
 ## About My Project Electronics Engineering Warehouse
-- This is my Electronics Engineering warehouse where electronics product store. The primary function of a warehouse is to provide storage space for equipment, inventory or other items. It offers appropriate facilities to the enterprises for storing their goods when they aren't called for a sale. This helps prevent wastage of stock and ensure its protection and safety.I store in my warehouse tv, freeze, blender, kettle etc.
+- This is my Electronics Engineering warehouse where electronics product store. The primary function of a warehouse is to provide storage space for equipment, inventory or other items. It offers appropriate facilities to the enterprises for storing their goods when they aren't called for a sale. This helps prevent wastage of stock and ensure its protection and safety. We have enriched our technical facilitated with all necessary facilities where customers can repair their products. I store in my warehouse tv, freeze, blender, kettle etc.
 
 
 ## Technology and Framework
-- bootstrap
-- firebase
-- react router dom
-- react toastify
-- heroku 
+- Bootstrap
+- Firebase
+- React router dom
+- React toastify
+- Heroku 
+- Node js 
+- Mongo Db 
+- Github 
