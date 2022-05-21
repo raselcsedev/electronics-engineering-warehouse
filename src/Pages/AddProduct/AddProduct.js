@@ -26,7 +26,7 @@ const AddProduct = () => {
                 <input placeholder='quantity' className='mb-3' type='number' {...register("Quantity")} />
                 <textarea placeholder='description' className='mb-3' {...register("Description")} />
                 <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
-                <input type="submit" value='Add Product' />
+                <input className='btn btn-success' type="submit" value='Add Product' />
             </form>
         </div>
     );

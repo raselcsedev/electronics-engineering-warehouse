@@ -12,7 +12,7 @@ const DemandProducts = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>Electric Kettle</h3>
+                            <h3 >Electric Kettle</h3>
                             <p>The best electric kettles come with serious perks for the committed coffee or tea drinkers: They boil water nearly twice as fast as conventional kettles...</p>
                             
                         </div>
@@ -24,7 +24,7 @@ const DemandProducts = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>Blenders</h3>
+                            <h3>Blenders</h3>
                             <p>Blenders can pure vegetables into soup, crush nuts into butter, whir dressings and sauces into silky emulsifications, chop ingredients into salsas, and, of course, make smoothies. </p>
                         </div>
                     </div>
@@ -35,7 +35,7 @@ const DemandProducts = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>Hand Mixer</h3>
+                            <h3 >Hand Mixer</h3>
                             <p>A manual or electrical kitchen utensil that consists of a set of beaters attached to a gear driven mechanism to rotate the blades of the beaters.</p>
                         </div>
                     </div>

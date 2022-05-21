@@ -31,7 +31,7 @@ const ManageProduct = () => {
                     <h5 className='text-info mb-2'>{product.name}</h5>
                     <p className=' mb-2'>{product.price}</p> 
                     <p className=' mb-2'>{product.quantity}</p>
-                    <button className='btn btn-info mb-2 w-50 text-align-center' onClick={()=> handleDelivery(product._id) } >Delivery</button>
+                    <button className='btn btn-info mb-2 w-50 text-align-center' onClick={()=> handleDelivery(product._id) } >Delete</button>
 
                     </div>
                 </div>)

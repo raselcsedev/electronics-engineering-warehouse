@@ -12,7 +12,7 @@ const Facilities = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>Life TIme Support</h3>
+                            <h3>Life TIme Support</h3>
                             <p>We offer technical support for the entire product lifetime and up to seven years after a product has been discontinued.</p>
                         </div>
                     </div>
@@ -23,7 +23,7 @@ const Facilities = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>24/7 Online Support</h3>
+                            <h3>24/7 Online Support</h3>
                             <p>Our top support team is always here for the newbies whenever they are in issues. You will find them 24/7 at your services.</p>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const Facilities = () => {
                     </div>
                     <div className='align-content-around'>
                         <div>
-                            <h3 className=' text-center'>Backup</h3>
+                            <h3>Backup</h3>
                             <p>We have enriched our technical facilitated with all necessary facilities where customers can repair their products.  </p>
                         </div>
                     </div>

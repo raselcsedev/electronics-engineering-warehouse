@@ -1,5 +1,9 @@
 .image-container{
-    height: 250px;
-    width: 350px;
+    height: 150px;
+    width: 150px;
     text-align: center;
+}
+.manage-button{
+    margin-left: 900px;
+    font-weight: 900;
 }
