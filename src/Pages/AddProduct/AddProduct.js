@@ -21,11 +21,11 @@ const AddProduct = () => {
         <div className='w-50 mx-auto'>
             <h2>Add product</h2>
             <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
-                <input placeholder='name' className='mb-3' {...register("Name",{required: true})} />
-                <input placeholder='price' className='mb-3' type='number' {...register("Price",{required: true})} />
-                <input placeholder='quantity' className='mb-3' type='number' {...register("Quantity",{required: true})} />
-                <textarea placeholder='description' className='mb-3' {...register("Description",{required: true})} />
-                
+                <input placeholder='name'  className='mb-3' {...register("Name")} />
+                <input placeholder='price' className='mb-3' type='number' {...register("Price")} />
+                <input placeholder='quantity' className='mb-3' type='number' {...register("Quantity")} />
+                <textarea placeholder='description' className='mb-3' {...register("Description")} />
+                <input className='mb-2' placeholder='Photo URL' type="text" {...register("img")} />
                 <input type="submit" value='Add Product' />
             </form>
         </div>

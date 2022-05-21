@@ -15,6 +15,7 @@ import Products from './Pages/Home/Products/Products';
 import Footer from './Pages/Shared/Footer/Footer';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
 import Blogs from './Pages/Blogs/Blogs';
+import AllProducts from './Pages/AllProducts/AllProducts';
 
 
 function App() {
@@ -47,6 +48,11 @@ function App() {
         <Route path='/manageProduct' element={
           <RequireRoute>
             <ManageProduct></ManageProduct>
+          </RequireRoute>
+        }></Route>
+        <Route path='/allProduct' element={
+          <RequireRoute>
+            <AllProducts></AllProducts>
           </RequireRoute>
         }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
