@@ -4,7 +4,7 @@ import './Facilities.css'
 const Facilities = () => {
     return (
         <div >
-            <h1 className='facilities-title mx-auto text-info mb-3 mt-3' >Our Facilities</h1>
+            <h1 className='facilities-title mx-auto text-info mb-5 mt-5' >Our Facilities</h1>
             <div className='facilities-container container'>
                 <div className='text-dark text-align-center '>
                     <div >

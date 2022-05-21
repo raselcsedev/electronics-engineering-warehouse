@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import Banner from '../Banner/Banner';
+import DemandProducts from '../DemandProducts/DemandProducts';
 import Products from '../Products/Products';
 import Facilities from './Facilities/Facilities';
 import './Home.css'
@@ -15,6 +16,7 @@ const Home = () => {
             <Banner></Banner>
             <Products></Products>
             <Facilities></Facilities>
+            <DemandProducts></DemandProducts>
             <button className='manage-button btn btn-link text-align-center' onClick={()=> navigateToManageProduct()} >Manage Product</button>
         </div>
     );
