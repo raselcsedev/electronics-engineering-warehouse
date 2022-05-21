@@ -2,9 +2,9 @@
 
 Electronics Engineering Warehouse with [Create React App](https://electronics-warehouse-cea0b.web.app/).
 
-# StackOverFlow Question
+# Github issue submit 
 
-StackOverFlow Question [Create React App](https://stackoverflow.com/questions/ask?fbclid=IwAR3TxlM1H4H44p5roswzJ5d8l0KVkyvBJ0UH_UWSxWcTzzXcyyWYicH9bfI).
+Github issue [Github issue](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-raselcsedev/issues/1).
 
 
 ## About My Project Electronics Engineering Warehouse
