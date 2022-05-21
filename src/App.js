@@ -14,6 +14,7 @@ import AddProduct from './Pages/AddProduct/AddProduct';
 import Products from './Pages/Home/Products/Products';
 import Footer from './Pages/Shared/Footer/Footer';
 import ManageProduct from './Pages/ManageProduct/ManageProduct';
+import Blogs from './Pages/Blogs/Blogs';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/products' element={<Products></Products>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/product/:productId' element={
           <RequireRoute>
             <ProductDetail></ProductDetail>
