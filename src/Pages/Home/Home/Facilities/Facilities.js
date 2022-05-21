@@ -8,7 +8,7 @@ const Facilities = () => {
             <div className='facilities-container container'>
                 <div className='text-dark text-align-center '>
                     <div >
-                        <img style={{ height: '150px' }} className='image-container mb-2' src="https://techbondit.com/public/techbond/lifetime-support.jpg" alt="" />
+                        <img style={{ height: '150px' }} className='facilities-img-container mb-2' src="https://techbondit.com/public/techbond/lifetime-support.jpg" alt="" />
                     </div>
                     <div className='align-content-around'>
                         <div>
@@ -19,7 +19,7 @@ const Facilities = () => {
                 </div>
                 <div className='text-dark text-align-center '>
                     <div >
-                        <img style={{ height: '150px'}} className='image-container mb-2' src="https://techbondit.com/public/techbond/24-7-support-500x500.png" alt="" />
+                        <img style={{ height: '150px'}} className='facilities-img-container mb-2' src="https://techbondit.com/public/techbond/24-7-support-500x500.png" alt="" />
                     </div>
                     <div className='align-content-around'>
                         <div>
@@ -30,7 +30,7 @@ const Facilities = () => {
                 </div>
                 <div className='text-dark text-align-center '>
                     <div >
-                        <img style={{ height: '150px' }} className='image-container mb-2' src="https://techbondit.com/public/techbond/lab-support1.png" alt="" />
+                        <img style={{ height: '150px' }} className='facilities-img-container mb-2' src="https://techbondit.com/public/techbond/lab-support1.png" alt="" />
                     </div>
                     <div className='align-content-around'>
                         <div>

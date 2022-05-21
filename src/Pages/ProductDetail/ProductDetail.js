@@ -11,19 +11,21 @@ const ProductDetail = () => {
         .then(res=>res.json())
         .then(data=>setProduct(data))
     },[]);
+
     const navigate = useNavigate();
     const navigateToManageProduct = () =>{
         navigate('/manageProduct')
-    }
+    };
+    
     return (
         <div className='container'>
-            <img className='image-container mt-5 ' src={product.img} alt="" />
+            <img className='product-container mt-5 ' src={product.img} alt="" />
             <div className=' mt-2 '>
             <h2>Name : {product.name}</h2>
             <h5>Supplier Name : {product.supplier}</h5>
-            <p>Description : {product.description}</p>
-            <p>Price : {product.price}$</p>
-            <p>Quantity : {product.quantity}</p>
+            <h5>Price : {product.price}$</h5>
+            <h5>Quantity : {product.quantity}</h5>
+            <h6>Description : {product.description}</h6>
 
             </div>
 

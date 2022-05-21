@@ -10,15 +10,15 @@ const Product = ({product}) => {
     return (
         <div className='product text-dark container text-align-center'>
             <div >
-            <img style={{height:'200px'}} className='image-container mb-2' src={img} alt="" />
+            <img style={{height:'200px'}} className='image-container mb-3' src={img} alt="" />
             </div>
             <div className='align-content-around'>
             <div>
-            <h3 style={{height:'100px'}} className=' text-center'>{name}</h3>
+            <h3 style={{height:'75px'}} className=' text-center'>{name}</h3>
             <h5>Supplier Name : {product.supplier}</h5>
-            <p>Description : {product.description}</p>
-            <p>Price : {product.price}$</p>
-            <p>Quantity : {product.quantity}</p>
+            <h6>Description : <small>{product.description}</small> </h6>
+            <h6>Price : {product.price}$</h6>
+            <h6>Quantity : {product.quantity}</h6>
             </div>
             <div className='mt-3 mb-0'>
             <button className='btn btn-info w-100 mx-auto text-align-center' onClick={()=> navigateToProductDetail(_id)} >Update</button>
