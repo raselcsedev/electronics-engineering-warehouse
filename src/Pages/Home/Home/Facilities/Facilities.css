@@ -1,0 +1,9 @@
+.facilities-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.facilities-title{
+    text-align: center;
+    color: blue;
+}
